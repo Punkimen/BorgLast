@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            <section class="preview">
+                <div class="container">
+                    <div class="preview__title">НОВИНИ</div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news__header">
+                        <div class="news__header-slider">
+                            <div href="#" class="news__header-slide" style="background-image: url(./img/news_1.png);">
+                                <a href="">
+                                    <div class="news__header-title">СУДОВА ПРАКТИКА</div>
+                                </a>
+                            </div>
+                            <div href="#" class="news__header-slide" style="background-image: url(./img/news_2.png);">
+                                <a href="">
+                                    <div class="news__header-title">КРЕДИТНА АНАЛІТИКА</div>
+                                </a>
+                            </div>
+                            <div href="#" class="news__header-slide" style="background-image: url(./img/news_3.png);">
+                                <a href="">
+                                    <div class="news__header-title">ПЕРЕВІРКА КОНТРАГЕНТІВ</div>
+                                </a>
+                            </div>
+                            <div href="#" class="news__header-slide" style="background-image: url(./img/news_1.png);">
+                                <a href="">
+                                    <div class="news__header-title">СУДОВА ПРАКТИКА</div>
+                                </a>
+                            </div>
+                            <div href="#" class="news__header-slide" style="background-image: url(./img/news_2.png);">
+                                <a href="">
+                                    <div class="news__header-title">КРЕДИТНА АНАЛІТИКА</div>
+                                </a>
+                            </div>
+                            <div href="#" class="news__header-slide" style="background-image: url(./img/news_3.png);">
+                                <a href="">
+                                    <div class="news__header-title">ПЕРЕВІРКА КОНТРАГЕНТІВ</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-wrapper">
+                        <div class="news-wrapper__left">
+                            <div class="news-wrapper__item news-new">
+                                <div class="news-wrapper__title news-new__title">
+                                    ІНШЕ
+                                    <span>Новини для юристів</span>
+                                </div>
+                                <div class="news-new__wrapper">
+                                    <div class="news-block">
+                                        <div class="news-block__img">
+                                            <img src="img/news_1.jpg" alt="">
+                                        </div>
+                                        <div class="news-block__content">
+                                            <div class="news-block__title">Издание VTimes закрылось после его признания
+                                                иноагентом</div>
+                                            <div class="news-block__text">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolor</div>
+                                            <div class="news-block__date">12 вересня 2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="news-block">
+                                        <div class="news-block__img">
+                                            <img src="img/news_2.jpg" alt="">
+                                        </div>
+                                        <div class="news-block__content">
+                                            <div class="news-block__title">Как поставщику изменить цену в одностороннем
+                                                порядке</div>
+                                            <div class="news-block__text">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolor</div>
+                                            <div class="news-block__date">12 вересня 2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="news-block news-block--row">
+                                        <div class="news-block__img">
+                                            <img src="img/news_3.jpg" alt="">
+                                        </div>
+                                        <div class="news-block__content">
+                                            <div>
+                                                <div class="news-block__title">Апелляционным судам могут расширить
+                                                    полномочия
+                                                </div>
+                                                <div class="news-block__text">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit, sed do eiusmod tempor incididunt ut labore et dolor
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolor</div>
+                                            </div>
+                                            <div class="news-block__date">12 вересня 2020</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-new__pagination">
+                                    <button class="news-new__pagination-btn news-new__pagination-btn--prev btn-reset">
+                                        <span class="news-new__pagination-btn__arrow">
+                                            <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.375 1.20825L5.16667 4.99992L1.375 8.79158" stroke="#5C5C5C"
+                                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul class="news-new__pagination-list">
+                                        <li class="news-new__pagination-item">
+                                            <button class="btn-reset news-new__pagination-num active">1</button>
+                                        </li>
+                                        <li class="news-new__pagination-item">
+                                            <button class="btn-reset news-new__pagination-num">2</button>
+                                        </li>
+                                        <li class="news-new__pagination-item">
+                                            <button class="btn-reset news-new__pagination-num">3</button>
+                                        </li>
+                                        <li class="news-new__pagination-item">
+                                            <button class="btn-reset news-new__pagination-num">4</button>
+                                        </li>
+                                        <li class="news-new__pagination-item">
+                                            <span class="news-new__pagination-dotted">...</span>
+                                        </li>
+                                        <li class="news-new__pagination-item">
+                                            <button class="btn-reset news-new__pagination-num">55</button>
+                                        </li>
+                                    </ul>
+                                    <button class="news-new__pagination-btn news-new__pagination-btn--next btn-reset">
+                                        <span class="news-new__pagination-btn__arrow">
+                                            <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.375 1.20825L5.16667 4.99992L1.375 8.79158" stroke="#5C5C5C"
+                                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-wrapper__right">
+                            <div class="news-wrapper__item favourites-news">
+                                <div class="news-wrapper__title favourites-news__title">
+                                    обране
+                                </div>
+                                <div class="favourites-news__item active">
+                                    <div class="favourites-news__label"><span>СТАТТІ</span></div>
+                                    <div class="favourites-news__links">
+                                        <a href="#" class="favourites-news__link">Новини для юристів</a>
+                                        <a href="#" class="favourites-news__link">Досудові справи</a>
+                                        <a href="#" class="favourites-news__link">Покриття витрат</a>
+                                        <a href="#" class="favourites-news__link">Кредитні договора</a>
+                                    </div>
+                                </div>
+                                <div class="favourites-news__item">
+                                    <div class="favourites-news__label"><span>НОВИНИ</span></div>
+                                    <div class="favourites-news__links">
+                                        <a href="#" class="favourites-news__link">Новини для юристів</a>
+                                        <a href="#" class="favourites-news__link">Досудові справи</a>
+                                        <a href="#" class="favourites-news__link">Покриття витрат</a>
+                                        <a href="#" class="favourites-news__link">Кредитні договора</a>
+                                    </div>
+                                </div>
+                                <div class="favourites-news__item">
+                                    <div class="favourites-news__label"><span>ТОП ЗА ТИЖДЕНЬ</span></div>
+                                    <div class="favourites-news__links">
+                                        <a href="#" class="favourites-news__link">Новини для юристів</a>
+                                        <a href="#" class="favourites-news__link">Досудові справи</a>
+                                        <a href="#" class="favourites-news__link">Покриття витрат</a>
+                                        <a href="#" class="favourites-news__link">Кредитні договора</a>
+                                    </div>
+                                </div>
+                                <div class="favourites-news__item">
+                                    <div class="favourites-news__label"><span>ІНШЕ</span></div>
+                                    <div class="favourites-news__links">
+                                        <a href="#" class="favourites-news__link">Новини для юристів</a>
+                                        <a href="#" class="favourites-news__link">Досудові справи</a>
+                                        <a href="#" class="favourites-news__link">Покриття витрат</a>
+                                        <a href="#" class="favourites-news__link">Кредитні договора</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-wrapper__item news-top">
+                                <div class="news-wrapper__title news-top__title">
+                                    TOP articles from the author of the blog
+                                </div>
+                                <div class="news-top__inner">
+                                    <a href="#" class="news-top__item ">
+                                        <div class="news-top__img"><img src="img/top-news_1.png" alt=""></div>
+                                        <div class="news-top__content">
+                                            <div class="news-top__content-title">Апелляционным судам могут расширить
+                                                полномочия
+                                            </div>
+                                            <div class="news-top__text">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                elit.</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-top__item">
+                                        <div class="news-top__img"><img src="img/top-news_1.png" alt=""></div>
+                                        <div class="news-top__content">
+                                            <div class="news-top__content-title">Апелляционным судам могут расширить
+                                                полномочия
+                                            </div>
+                                            <div class="news-top__text">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                elit.</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-top__item">
+                                        <div class="news-top__img"><img src="img/top-news_1.png" alt=""></div>
+                                        <div class="news-top__content">
+                                            <div class="news-top__content-title">Апелляционным судам могут расширить
+                                                полномочия
+                                            </div>
+                                            <div class="news-top__text">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                elit.</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-top__item">
+                                        <div class="news-top__img"><img src="img/top-news_1.png" alt=""></div>
+                                        <div class="news-top__content">
+                                            <div class="news-top__content-title">Апелляционным судам могут расширить
+                                                полномочия
+                                            </div>
+                                            <div class="news-top__text">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                elit.</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-top__item">
+                                        <div class="news-top__img"><img src="img/top-news_1.png" alt=""></div>
+                                        <div class="news-top__content">
+                                            <div class="news-top__content-title">Апелляционным судам могут расширить
+                                                полномочия
+                                            </div>
+                                            <div class="news-top__text">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                elit.</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-top__item">
+                                        <div class="news-top__img"><img src="img/top-news_1.png" alt=""></div>
+                                        <div class="news-top__content">
+                                            <div class="news-top__content-title">Апелляционным судам могут расширить
+                                                полномочия
+                                            </div>
+                                            <div class="news-top__text">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                elit.</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

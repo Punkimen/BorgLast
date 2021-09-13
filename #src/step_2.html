@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step_2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            <section class="preview">
+                <div class="container">
+                    <div class="preview__title">ЗНАЙДІТЬ ВІХІД ПРЯМО ЗАРАЗ!</div>
+                    <div class="preview__subtitle">Заявка на правовій аналіз</div>
+                </div>
+            </section>
+            <section class="help">
+                <div class="container">
+                    <form id="help-form" class="page-form" action="">
+                        <div class="help__wrapper">
+                            <div class="help__wrapper-item form-accordion">
+                                <div class="form-accordion__name">Допомога</div>
+                                <div class="form-accordion__content">
+                                    <div class="accordion-content__item">
+                                        <div class="form-content__title">Клієнт</div>
+                                        <div class="form-content__wrapper">
+                                            <div class="form-content__inputs form-content__inputs_personal">
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Прізвище</label>
+                                                    <input required name='surname' type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Имя</label>
+                                                    <input required name="name" type="text">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp_area">
+                                                    <label for="form-content__inp-label">По батькові</label>
+                                                    <input required name="patronymic" type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Телефон</label>
+                                                    <input class="input__phone" required name="phone" type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">E-mail</label>
+                                                    <input required name="email" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content__item">
+                                        <div class="form-content__title">Виданий кредит</div>
+                                        <div class="form-content__wrapper form-content__wrapper_flex">
+                                            <div class="form-content__inputs form-content__inputs_creditHelp">
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">ИПН</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Назва банку/ Назва фінансової
+                                                        компанії</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp_area">
+                                                    <label for="form-content__inp-label">МФО</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">№ договору, дата</label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-content__file form-file">
+                                                <div class="form-content__title">Завантажити договір</div>
+                                                <div class="form-file__inp">
+                                                    <input type="file">
+                                                    <span class="select-file">Оберіть файл</span>
+                                                    <span class="downloaded-file">Файл завантажений</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-content__textarea">
+                                            <div class="form-content__inp form-content__inp_textarea">
+                                                <label for="form-content__inp-label">Коментарі</label>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form__content-check">
+                                            <label for="processing ">
+                                                <input required name="agree" id="processing " type="checkbox">
+                                                Я хочу отримати правовий аналіз моєї ситуації та
+                                                даю згоду на обробку моїх персональних данних
+                                                <div class="checkbox__indificator"></div>
+                                            </label>
+                                        </div>
+                                        <button class="form__btn btn">Відправити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__back">
+                            <a class="form__btns-back" href="#">Вернуться назад</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

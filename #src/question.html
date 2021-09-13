@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            <section class="preview">
+                <div class="container">
+                    <div class="preview__title">ЗНАЙДІТЬ ВІХІД ПРЯМО ЗАРАЗ!</div>
+                    <div class="preview__subtitle">Заявка на правовій аналіз</div>
+                </div>
+            </section>
+            <section class="data">
+                <div class="container">
+                    <form class="page-form" action="">
+                        <div class="data__wrapper">
+                            <div class="data__wrapper-item form-accordion">
+                                <div class="form-accordion__name">Особисті дані</div>
+                                <div class="form-accordion__content">
+                                    <div class="form-content__title">Клієнт</div>
+                                    <div class="form-content__wrapper">
+                                        <div class="form-content__radio form-content__radio_row">
+                                            <label for="privat">
+                                                <input id="privat" type="radio" name="personal-radio">
+                                                Приватна особа підприємець
+                                                <div class="radio__indificator"></div>
+                                            </label>
+                                            <label for="individual">
+                                                <input id="individual" type="radio" name="personal-radio">
+                                                Физична особа
+                                                <div class="radio__indificator"></div>
+                                            </label>
+                                        </div>
+                                        <div class="form-content__inputs form-content__inputs_personal">
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Прізвище</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Имя</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp_area">
+                                                <label for="form-content__inp-label">По батькові</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Телефон</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">E-mail</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data__wrapper-item form-accordion">
+                                <div class="form-accordion__name">Дані про заборгованність</div>
+                                <div class="form-accordion__content">
+                                    <div class="form-accordion__content-row form-row">
+                                        <div class="form-row__item">
+                                            <div class="form-content__title form-content__title_height">Офіційний
+                                                щомісячний дохід</div>
+                                            <div class="form-content__radio">
+                                                <label for="min-salary">
+                                                    <input id="min-salary" type="radio" name="salary">
+                                                    Менше 7 000 грн
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="medium-salary">
+                                                    <input id="medium-salary" type="radio" name="salary">
+                                                    7 000 грн- 10 000 грн
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="large-salary">
+                                                    <input id="large-salary" type="radio" name="salary">
+                                                    Більше 10 000 грн
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row__item">
+                                            <div class="form-content__title form-content__title_height">Загальна сумма
+                                                заборгованності</div>
+                                            <div class="form-content__radio">
+                                                <label for="min-arrears">
+                                                    <input id="min-arrears" type="radio" name="arrears">
+                                                    Менше 7 000 грн
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="medium-arrears">
+                                                    <input id="medium-arrears" type="radio" name="arrears">
+                                                    7 000 грн- 10 000 грн
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="large-arrears">
+                                                    <input id="large-arrears" type="radio" name="arrears">
+                                                    Більше 10 000 грн
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__content-line"></div>
+                                    <div class="form-accordion__content-row form-row">
+                                        <div class="form-row__item">
+                                            <div class="form-content__title">Кількість кредитів</div>
+                                            <div class="form-content__radio">
+                                                <label for="one-credit">
+                                                    <input id="one-credit" type="radio" name="credit">
+                                                    Один
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="two-credit">
+                                                    <input id="two-credit" type="radio" name="credit">
+                                                    Два
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="more-credit">
+                                                    <input id="more-credit" type="radio" name="credit">
+                                                    Три або більше
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row__item">
+                                            <div class="form-content__title">Іпотека</div>
+                                            <div class="form-content__radio">
+                                                <label for="yes-mortgage">
+                                                    <input id="yes-mortgage" type="radio" name="mortgage">
+                                                    Так
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="no-mortgage">
+                                                    <input id="no-mortgage" type="radio" name="mortgage">
+                                                    Ні
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row__item form-row__item_last">
+                                            <div class="form-content__title">Автокредит</div>
+                                            <div class="form-content__radio">
+                                                <label for="yes-loanCar">
+                                                    <input id="yes-loanCar" type="radio" name="loanCar">
+                                                    Так
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="no-loanCar">
+                                                    <input id="no-loanCar" type="radio" name="loanCar">
+                                                    Ні
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data__wrapper-item form-accordion form-accordion_credit">
+                                <div class="form-accordion__name">Дані про кредит</div>
+                                <div class="form-accordion__content">
+                                    <div class="form-accordion__content-item">
+                                        <div class="form-content__title">Тип кредиту</div>
+                                        <div class="form-content__radio">
+                                            <label for="consumer">
+                                                <input id="consumer" type="radio" name="typeCredit">
+                                                Споживчий <span>(для особистого користування, невелика сума)</span>
+                                                <div class="radio__indificator"></div>
+                                            </label>
+                                            <label for="noConsumer">
+                                                <input id="noConsumer" type="radio" name="typeCredit">
+                                                Не споживчий <span> (для підприємницької та комерційної
+                                                    деяльності)</span>
+                                                <div class="radio__indificator"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-accordion__content-item">
+                                        <div class="form-content__title">Сума кредиту</div>
+                                        <div class="form-content__inputs form-content__inputs_credit">
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Сума</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Строк</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Сума щомісячного
+                                                    платежу</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-content__inp">
+                                                <label for="form-content__inp-label">Дата останнього платежу</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-accordion__content-item">
+                                        <div class="form-content__title">Чи була пролонгація</div>
+                                        <div class="form-content__radio">
+                                            <label for="yesExtension">
+                                                <input id="yesExtension" type="radio" name="extension">
+                                                Так
+                                                <div class="radio__indificator"></div>
+                                            </label>
+                                            <label for="noExtension">
+                                                <input id="noExtension" type="radio" name="extension">
+                                                Ні
+                                                <div class="radio__indificator"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__btns">
+                            <button class="form__btns-btn btn">Наступний крок</button>
+                            <a class="form__btns-back" href="#">Вернуться назад</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            <section class="preview">
+                <div class="container">
+                    <div class="preview__title">ЗНАЙДІТЬ ВІХІД ПРЯМО ЗАРАЗ!</div>
+                    <div class="preview__subtitle">Заявка на правовій аналіз</div>
+                </div>
+            </section>
+            <section class="help">
+                <div class="container">
+                    <form id="anketa-form" class="page-form" action="">
+                        <div class="help__wrapper">
+                            <div class="help__wrapper-item form-accordion form-accordion--anketa">
+                                <div class="form-accordion__name">Анкета (розгорнута)</div>
+                                <div class="form-accordion__content">
+                                    <div class="accordion-content__item ">
+                                        <div class="form-content__wrapper anketa-item">
+                                            <div class="form-content__title">Клієнт</div>
+                                            <div class="form-content__radio form-content__radio_row">
+                                                <label for="privat">
+                                                    <input id="privat" type="radio" name="personal-radio" checked>
+                                                    Приватна особа підприємець
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                                <label for="individual">
+                                                    <input id="individual" type="radio" name="personal-radio">
+                                                    Физична особа
+                                                    <div class="radio__indificator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="form-content__inputs form-content__inputs_personal">
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Прізвище</label>
+                                                    <input name="family" type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Имя</label>
+                                                    <input type="name">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp_area">
+                                                    <label for="form-content__inp-label">По батькові</label>
+                                                    <input type="fatherName">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Телефон</label>
+                                                    <input name="phone" class="input__phone" type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">E-mail</label>
+                                                    <input name="email" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-content__wrapper anketa-item">
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Як і коли дізналися про
+                                                    існування боргу</label>
+                                                <input name="know-about-debt" type="text">
+                                            </div>
+                                            <div class="form-content__inputs-anketa">
+                                                <div class="form-content__inp form-content__inp--anketa">
+                                                    <label class="form-content__inp-label-anketa">На яку суму був
+                                                        кредит</label>
+                                                    <input name="creditSumm" type="text">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp--anketa">
+                                                    <label class="form-content__inp-label-anketa">Дата укладення
+                                                        договору</label>
+                                                    <input name="creditDate" type="text">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp--anketa">
+                                                    <label class="form-content__inp-label-anketa">Строк дії</label>
+                                                    <input name="creditTerm" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Чи маєте у себе оригінал (копію) кредитного договору ?</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="min-salary">
+                                                            <input id="min-salary" type="radio" name="salary">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="medium-salary">
+                                                            <input id="medium-salary" type="radio" name="salary">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Кредитний договір був укладений на папері чи онлайн?</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="credits-contact">
+                                                            <input id="credits-contact" type="radio"
+                                                                name="credits-contact">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="credits-contact_2">
+                                                            <input id="credits-contact_2" type="radio"
+                                                                name="credits-contact">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100 form-content__file">
+                                                <label class="form-content__inp-label-anketa">Надішліть копію кредитного
+                                                    договору</label>
+                                                <div class="costum-file">
+                                                    <input name="copyCintract" type="file">
+                                                    <div class="input-file__icon">
+                                                        <img src="img/icon/file-download.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Чи брали кредит у даної
+                                                    компанії, яка вказана кредитором</label>
+                                                <input name="nameCreditCompany" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-content__wrapper ">
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Якщо не брали кредит в
+                                                    даній компанії: припущення про те, звідки у неї право вимоги і чи
+                                                    отримували повідомлення про відступлення прав вимоги (тобто чи
+                                                    повідомляли, що кредит проданий іншій компанії): </label>
+                                                <input name="claimCompany" type="text">
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Чи маєте у себе оригінал (копію) кредитного договору ?</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="quest_1">
+                                                            <input id="quest_1" type="radio" name="quest">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="quest_2">
+                                                            <input id="quest_2" type="radio" name="quest">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Чи є квитанції</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="receipts_1">
+                                                            <input id="receipts_1" type="radio" name="receipts">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="receipts_2">
+                                                            <input id="receipts_2" type="radio" name="receipts">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Скільки всього сплатили по
+                                                    кредиту, чи є квитанції</label>
+                                                <input name="payCredit" type="text">
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Чи є копія документу про визначену суму боргу по кредиту (від
+                                                        МФО, нотаріуса, виконавчої служби)</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="copy-doc">
+                                                            <input id="copy-doc" type="radio" name="copy-doc">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="copy-doc_1">
+                                                            <input id="copy-doc_1" type="radio" name="copy-doc">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Вам відомо, подавався нотаріусу кредитором оригінал договору
+                                                    </div>
+                                                    <div class="form-content__radio">
+                                                        <label for="notary">
+                                                            <input id="notary" type="radio" name="notary">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="notary_1">
+                                                            <input id="notary_1" type="radio" name="notary">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Вам відомо, надавалась нотаріусу кредитором виписка з рахунку
+                                                        боржника (Вашого рахунку)</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="notary-doc">
+                                                            <input id="notary-doc" type="radio" name="notary-doc">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="notary-doc_1">
+                                                            <input id="notary-doc_1" type="radio" name="notary-doc">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-content__wrapper anketa-item anketa-item--boreder-none">
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Скільки разів зверталися
+                                                    до Вас щодо погашення боргу перед зверненням до суду чи вчиненням
+                                                    виконавчого напису </label>
+                                                <input name="howMatch" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Які підписані Вами
+                                                    документи є у МФО (договір, заяви, листи, згоди тощо</label>
+                                                <div class="inputs-checkboxes">
+                                                    <div class="form__content-check">
+                                                        <label for="checkboxes-contract ">
+                                                            <input required name="agree" id="checkboxes-contract "
+                                                                type="checkbox">
+                                                            Договір
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="checkboxes-application ">
+                                                            <input required name="agree" id="checkboxes-application "
+                                                                type="checkbox">
+                                                            Заява
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="checkboxes-latters ">
+                                                            <input required name="agree" id="checkboxes-latters "
+                                                                type="checkbox">
+                                                            Листи
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-content__inp">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="checkboxes-assent ">
+                                                            <input required name="agree" id="checkboxes-assent "
+                                                                type="checkbox">
+                                                            Згоди
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="checkboxes-other ">
+                                                            <input required name="agree" id="checkboxes-other "
+                                                                type="checkbox">
+                                                            Інше
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Які додаткові
+                                                    договори/угоди Ви підписували, наприклад: (пролонгації,
+                                                    реструктуризації заборгованості) </label>
+                                                <input name="signatureContract" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Чи маєте у себе оригінал (копію) кредитного договору ?</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="estate-y">
+                                                            <input id="estate-y" type="radio" name="estate">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="estate-n">
+                                                            <input id="estate-n" type="radio" name="estate">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Місце Вашої реєстрації
+                                                </label>
+                                                <input name="regPlace" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Місце фактичного
+                                                    проживання
+                                                </label>
+                                                <input name="factPlace" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Адреса, яку вказували при
+                                                    оформленні кредиту
+                                                </label>
+                                                <input name="adressForCredit" type="text">
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Ви маєте офіційне працевлаштування</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="employment-Y ">
+                                                            <input id="employment-Y " type="radio" name="employment">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="employment-N">
+                                                            <input id="employment-N" type="radio" name="employment">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Ви маєте офіційну заробітну плату
+                                                    </div>
+                                                    <div class="form-content__radio">
+                                                        <label for="officalSalary-Y">
+                                                            <input id="officalSalary-Y" type="radio"
+                                                                name="officalSalary">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="officalSalary-N">
+                                                            <input id="officalSalary-N" type="radio"
+                                                                name="officalSalary">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Вам відомо, надавалась нотаріусу кредитором виписка з рахунку
+                                                        боржника (Вашого рахунку)</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="invoices-Y">
+                                                            <input id="invoices-Y" type="radio" name="invoices">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="invoices-N">
+                                                            <input id="invoices-N" type="radio" name="invoices">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Ви маєте соціальну допомогу </div>
+                                                    <div class="form-content__radio">
+                                                        <label for="socialHelp-Y">
+                                                            <input id="socialHelp-Y" type="radio" name="socialHelp">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="socialHelp-N">
+                                                            <input id="socialHelp-N" type="radio" name="socialHelp">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100 form-content__file">
+                                                <label class="form-content__inp-label-anketa">Надішліть копію кредитного
+                                                    договору</label>
+                                                <div class="costum-file">
+                                                    <input name="cpyContract_2" type="file">
+                                                    <div class="input-file__icon">
+                                                        <img src="img/icon/file-download.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Отримували Постанова виконавця про відрахування з зарплати,
+                                                        пенсії чи інших доходів:</div>
+                                                    <div class="form-content__radio">
+                                                        <label for="deductions-salary-Y">
+                                                            <input id="deductions-salary-Y" type="radio"
+                                                                name="deductions ">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="deductions-salary-N">
+                                                            <input id="deductions-salary-N" type="radio"
+                                                                name="deductions ">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Кого саме маєте на
+                                                    утриманні (малолітні діти, інваліди чи інші особи):
+                                                </label>
+                                                <input name="whoContent" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Які підписані Вами
+                                                    документи є у МФО (договір, заяви, листи, згоди тощо</label>
+                                                <div class="inputs-checkboxes inputs-checkboxes--three">
+                                                    <div class="form__content-check">
+                                                        <label for="social-status_1 ">
+                                                            <input required name="agree" id="social-status_2 "
+                                                                type="checkbox">
+                                                            Ветеран війни
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="social-status_2 ">
+                                                            <input required name="agree" id="social-status_2 "
+                                                                type="checkbox">
+                                                            Учасник війни
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="social-status_3 ">
+                                                            <input required name="agree" id="social-status_3"
+                                                                type="checkbox">
+                                                            Інвалід
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check">
+                                                        <label for="social-status_4 ">
+                                                            <input required name="agree" id="social-status_4 "
+                                                                type="checkbox">
+                                                            Багатодітна мати/батько
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__content-check form__content-check--midle">
+                                                        <label for="social-status_5 ">
+                                                            <input required name="agree" id="social-status_4 "
+                                                                type="checkbox">
+                                                            Чорнобилець/ліквідатор аварії на ЧАЕС
+                                                            <div class="checkbox__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">За що саме найбільш
+                                                    турбуєтеся?
+                                                </label>
+                                                <input name="fowWhatNeed" type="text">
+                                            </div>
+                                            <div class="form-content__row">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        РАНІШЕ до звернення до нас, мали Ви судові спори з МФО
+                                                        (кредитором), виконавцем </div>
+                                                    <div class="form-content__radio">
+                                                        <label for="creditBefore-Y ">
+                                                            <input id="creditBefore-Y " type="radio"
+                                                                name="creditBefore">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="creditBefore-N">
+                                                            <input id="creditBefore-N" type="radio" name="creditBefore">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Маєте виконавчі провадження по цьому кредиту чи іншому кредиту
+                                                    </div>
+                                                    <div class="form-content__radio">
+                                                        <label for="creditNow-Y">
+                                                            <input id="creditNow-Y" type="radio" name="creditNow">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="creditNow-N">
+                                                            <input id="creditNow-N" type="radio" name="creditNow">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <div class="form-row__item">
+                                                    <div class="form-content__title form-content__title_height">
+                                                        Чи брали виписку у бюро кредитних історій (Українське бюро
+                                                        кредитних історій, Перше українське бюро кредитних історій)?
+                                                    </div>
+                                                    <div class="form-content__radio">
+                                                        <label for="creditHistory-Y ">
+                                                            <input id="creditHistory-Y " type="radio"
+                                                                name="creditHistory">
+                                                            Так
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                        <label for="creditHistory-N">
+                                                            <input id="creditHistory-N" type="radio"
+                                                                name="creditHistory">
+                                                            Ні
+                                                            <div class="radio__indificator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Який бажаний результат від
+                                                    нашої роботи
+                                                </label>
+                                                <input name="desired-result" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Як Ви знайшли нас
+                                                </label>
+                                                <input name="searchUs" type="text">
+                                            </div>
+                                            <div class="form-content__inp form-content__inp--w100">
+                                                <label class="form-content__inp-label-anketa">Додаткова інформація, яку
+                                                    бажаєте повідомити
+                                                </label>
+                                                <input name="moreInfo" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-content__wrapper">
+                                            <div class="form-content__inp date-of-filling">
+                                                <label class="date-of-filling__label">Дата заповнення</label>
+                                                <input class="input-date" type="text" name="dateOfFill"
+                                                    placeholder="12 лютого 2021 року">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__back">
+                            <button class="form__btn btn">Зберегти</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
